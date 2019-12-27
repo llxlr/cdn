@@ -3,5 +3,5 @@
 
 使用jsdelivr的全球cdn加速图片和音频。
 ```
-https://cdn.jsdelivr.net/gh/jamesyangget/hexo-source@img/ + 文件的相对路径（包含拓展名）
+https://cdn.jsdelivr.net/gh/jamesyangget/cdn@img/ + 文件的相对路径（包含拓展名）
 ```
