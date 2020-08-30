@@ -1,0 +1,25 @@
+.page pre code {
+    position: relative;
+    display: block;
+    overflow-x: auto;
+    margin: 4.4px 0.px .4px 1px;
+    padding: 0;
+    max-height: 500px;
+    padding-left: 3.5em
+}
+
+.page .code-toolbar pre code {
+    position: relative;
+    display: block;
+    overflow-x: auto;
+    margin: 4.4px 0.px .4px 1px;
+    padding: 0;
+    max-height: 500px;
+    padding-left: 3.5em
+}
+
+.page pre {
+    padding: 0;
+    border-radius: 0;
+    overflow: hidden
+}
