@@ -1,6 +1,6 @@
 # cdn, static, data
 
-![Merge Imgbot](https://github.com/jamesyangget/cdn/workflows/Merge%20Imgbot/badge.svg)
+![Merge Imgbot](https://github.com/llxlr/cdn/workflows/Merge%20Imgbot/badge.svg)
 
 用github制作图床，基于PicGo;保存音乐文件
 
