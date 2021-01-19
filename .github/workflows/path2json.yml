@@ -15,6 +15,7 @@ jobs:
           type="defult"
           path="./img"
           file="public.json"
+          time=$(date '+%s')
           url="https://cdn.jsdelivr.net/gh/${{ github.repository }}"
           if [[ type != "defult" ]];then url="${url}/master";else url="${url}@${branch}";fi
           raw_arr=$(find ${path} -type f ! -name '*.json' -exec ls -dl \{\} \; | awk '{print $9}')
@@ -24,4 +25,5 @@ jobs:
           git config --global user.name '${{ github.actor }}'
           git config --global user.email '${{ secrets.EMAIL }}'
           git add ${path}/${file}
+          git commit --date="${time}" --message="[general update] $(date -u --date=@"${time}" '+%Y-%m-%d')."
           git push https://${user}:${{ secrets.GH_TOKEN }}@github.com/${repo}.git HEAD:${{ github.ref }}
