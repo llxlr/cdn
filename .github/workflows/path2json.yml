@@ -17,7 +17,7 @@ jobs:
           file="public.json"
           time=$(date '+%s')
           url="https://cdn.jsdelivr.net/gh/${{ github.repository }}"
-          if [[ type != "defult" ]];then url="${url}/master";else url="${url}@${branch}";fi
+          if [[ type != "defult" ]];then url="${url}";else url="${url}@${branch}";fi
           raw_arr=$(find ${path} -type f ! -name '*.json' -exec ls -dl \{\} \; | awk '{print $9}')
           path_arr=$(for fp in ${raw_arr[@]};do if [[ ! -d ${fp} ]]; then printf "\"${fp#\.}\",";fi;done)
           content=$(printf "{\"src\":\"${url}\",\"src\":[${path_arr}]}")
