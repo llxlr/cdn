@@ -17,7 +17,7 @@ window.onload = function () {
         methods: {
             fetchData() {
                 let picType = ''
-                picType = this.showR ? './r.json' : './public.json'
+                picType = this.showR ? './img/r.json' : './img/public.json'
                 axios.get(picType).then(res => {
                     this.currentPage = 1
                     this.pages = Math.ceil(res.data.pics.length / 50)
