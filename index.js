@@ -17,7 +17,7 @@ window.onload = function () {
         methods: {
             fetchData() {
                 let picType = ''
-                picType = this.showR ? './img/r.json' : './img/public.json'
+                picType = this.showR ? 'img/r.json' : 'img/public.json'
                 axios.get(picType).then(res => {
                     this.currentPage = 1
                     this.pages = Math.ceil(res.data.pics.length / 50)
@@ -39,7 +39,7 @@ window.onload = function () {
             },
             handleCheck(index, item) {
                 if(!this.showCheck) {
-                    window.open(`https://cdn.jsdelivr.net/gh/llxlr/cdn${item}`, '_blank')
+                    window.open(`https://cdn.jsdelivr.net/gh/llxlr/cdn/${item}`, '_blank')
                     return
                 }
                 if (this.checkedArr.includes(index)) {

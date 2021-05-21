@@ -34,7 +34,7 @@
     // GM downloader
     function GMDownload(url, name) {
         var arg = {
-            url: `https://steamuserimages-a.akamaihd.net/ugc/${url}`,
+            url: `https://cdn.jsdelivr.net/gh/llxlr/cdn/${url}`,
             name: `${name}.jpg`,
             onprogress: downloadProgress
         }
