@@ -161,7 +161,7 @@
   },
   {
     "colo": "HKG",
-    "region": "",
+    "region": "China",
     "city": "Hong Kong"
   },
   {
@@ -221,7 +221,7 @@
   },
   {
     "colo": "MFM",
-    "region": "",
+    "region": "China",
     "city": "Macau"
   },
   {
@@ -301,7 +301,7 @@
   },
   {
     "colo": "TPE",
-    "region": "",
+    "region": "China",
     "city": "Taipei"
   },
   {
@@ -726,7 +726,7 @@
   },
   {
     "colo": "ZDM",
-    "region": "",
+    "region": "Palestinian",
     "city": "Ramallah"
   },
   {
