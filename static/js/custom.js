@@ -8,7 +8,8 @@ console.log(`             -. .
      / ~-.___\\.-'  ,'            Sera le genre humain.
    /   .______.- ~ \\
  /   /'          \\   \\
- \\./               \\/'`);
+ \\./               \\/'
+`);
 
 !(function() {
   let cdn = document.getElementById('cdn');
