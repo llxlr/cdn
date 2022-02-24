@@ -14,7 +14,7 @@ console.log(`             -. .
 !(function() {
   let cdn = document.getElementById('cdn');
   if(!cdn){return;}
-  fetch('/cdn-cgi/trace').then(resp => resp.text()).then(res => {
+  fetch('https://white-album.top/cdn-cgi/trace').then(resp => resp.text()).then(res => {
     let area = res.split('colo=')[1].split('\\n')[0];
     fetch('https://cdn.jsdelivr.net/gh/llxlr/cdn/static/areas.json').then(resp => resp.json()).then(data => {
       for(var i in data){
