@@ -1,10 +1,16 @@
-window.onload = function(){
-  function switchCDN(origin, cdn){document.body.innerHTML = document.body.innerHTML.replace(origin, cdn);}
+const switchCDN = function(){
   try {
     if (returnCitySN.cid !== 'CN') {
-      switchCDN(/s-bj-92-blog\.oss\.dogecdn\.com/g, 'cdn.white-album.top');
+      document.body.innerHTML = document.body.innerHTML.replace(/s-bj-92-blog\.oss\.dogecdn\.com/g, 'cdn.white-album.top');
     }
   } catch {
-    switchCDN(/cdn\.white-album\.top/g, 's-bj-92-blog.oss.dogecdn.com');
+    document.body.innerHTML = document.body.innerHTML.replace(/cdn\.white-album\.top/g, 's-bj-92-blog.oss.dogecdn.com');
   }
 }
+
+document.addEventListener('pjax:send', function(){
+  switchCDN();
+});
+document.addEventListener('load', function(){
+  switchCDN();
+});
